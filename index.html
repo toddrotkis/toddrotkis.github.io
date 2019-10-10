@@ -8,20 +8,45 @@
   <style>
       body {
         margin: 0;
-        padding-top: 45vh;
-        color:#16161d;
-        background:#ffffff;
+        color:#fe019a;
         font-family: Impact, sans-serif;
-        font-size: 8vw;
+        font-size: 7vw;
 	text-align: center;
         font-style: normal;
         font-variant: normal;
         line-height: 28px;
+          overflow: hidden;
       }
+    #imageContainer {
+        overflow: hidden;
+      }
+      h1{
+          position:absolute;
+          top:72vh;
+          width:100vw;
+          z-index:10;
+      }
+      img {
+          object-fit: cover;
+          width:100vw;
+          height:100vh;          
+          animation: kenburns 80s infinite;
+        }
+      @keyframes kenburns {
+        0% {
+        }
+        100% {
+            transform: scale(5);
+        }
+    }
    </style>
 </head>
 
 <body>
-  Katie, send me a picture.
+    <h1>ToddRotkis.com</h1>
+       <div id="imageContainer">
+        <img src="Todd1.jpg">
+    </div>
 </body>
+
 </html>
